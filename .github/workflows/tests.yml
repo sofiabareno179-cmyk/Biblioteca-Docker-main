@@ -10,7 +10,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: app
+        working-directory: Biblioteca-Docker-main/app
 
     steps:
       - name: Checkout repository
@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
-          cache-dependency-path: app/requirements.txt
+          cache-dependency-path: Biblioteca-Docker-main/app/requirements.txt
 
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
